@@ -10,8 +10,57 @@ body{
 
 nav{
     background: #222244;
+    width: 49.5%;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    background: #443333;
+    display: inline-block;
 }
 
 header{
     background: #333333;
+}
+
+main{
+    background: url(../images/sittingonbench.jpg);
+    min-height: 650px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Class **************/
+
+.logo{
+    display: inline-block;
+    min-width: 50%;
+    background: #545454;
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.ug-pg, .research-items{
+    display: flex;
+    justify-content:space-between;
+}
+
+.ug-pg>section{
+    width: 475px;
+    height: 314px;
+    /* background: #554433; */
+}
+
+.research-items>section{
+    width: 350px;
+    height: 407px;
 }

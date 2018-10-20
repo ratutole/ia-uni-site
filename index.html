@@ -7,13 +7,14 @@
     <meta name="keywords" content="keywords about website- no more than 7 phrases" />
     <title>Academy University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="js/script.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <span class="logo">logo</span>
         <nav>
             <ul>
@@ -24,101 +25,126 @@
                 <li>nav5</li>
             </ul>
         </nav>
-    </header><!--nav and header-->
+    </header>
+    <!--nav and header-->
     <main>
-        <h1>Getting started with academic university</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus maiores, inventore ea minus libero?</p>
-        <button>read more</button>
-    </main><!--landing page-->
-    <section>
-        <section>
-            <h2>undrgraduate</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aspernatur.</p>
+        <div class="container">
+            <h1>Getting started with academic university</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus maiores, inventore ea minus
+                libero?</p>
             <button>read more</button>
+        </div>
+    </main>
+    <!--landing page-->
+    <div class="container">
+        <section class="ug-pg">
+            <section>
+                <h2>undergraduate</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aspernatur.</p>
+                <button>read more</button>
+            </section>
+            <section>
+                <h2>postgraduate</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aspernatur.</p>
+                <button>read more</button>
+            </section>
         </section>
-        <section>
-            <h2>postgraduate</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aspernatur.</p>
-            <button>read more</button>
-        </section>
-    </section><!--ug and pg-->
-    <article>
-        <section>
-            <h2>Research</h2>
-            <hr>
-            <h3>a stone that glows</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
-            <button>read more</button>
-        </section>
-        <section>
-            <h3>a stone that glows</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
-            <button>read more</button>
-        </section>
-        <section>
-            <h3>a stone that glows</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
-            <button>read more</button>
-        </section>
-    </article><!--Research-->
-    <section>
+        <!--ug and pg-->
         <article>
+            <div>
+                <h2>Research</h2>
+                <hr>
+            </div>
+            <div class="research-items">
             <section>
-                <h2>latest news</h2>
-                <p>happenings at au</p>
-                <a href="#">all news</a>
+                <img src="/images/ryan-jacobson-687814-unsplash.jpg" alt="A parked bicycle">
+                <h3>a stone that glows</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                <button>read more</button>
             </section>
             <section>
-                <section>
-                    <img src="" alt="">
-                    <h3>a guide to graduation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam optio debitis!</p>
-                    <p>24th June 2018</p>
-                    <button>read more</button>
-                </section>
-                <section>
-                    <img src="" alt="">
-                    <h3>Thrity miles of sweat</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam optio debitis!</p>
-                    <p>27th January 2018</p>
-                    <button>read more</button>
-                </section>
+                <img src="images/rawpixel-659493-unsplash.jpg" alt="Two women holding papers">
+                <h3>a stone that glows</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                <button>read more</button>
             </section>
+            <section>
+                <img src="images/taras-shypka-424928-unsplash.jpg" alt="A screen with code">
+                <h3>a stone that glows</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                <button>read more</button>
+            </section>
+            </div>
         </article>
+        <!--Research-->
         <section>
-            <section>
-                <h2>Events</h2>
-                <p>latest events</p>
-                <a href="#">all events</a>
-            </section>
-            <section>
+            <article>
                 <section>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>7th December 2018</p>
+                    <h2>latest news</h2>
+                    <p>happenings at au</p>
+                    <a href="#">all news</a>
                 </section>
                 <section>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>7th December 2018</p>
+                    <section>
+                        <img src="" alt="">
+                        <h3>a guide to graduation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam
+                            optio debitis!</p>
+                        <p>24th June 2018</p>
+                        <button>read more</button>
+                    </section>
+                    <section>
+                        <img src="" alt="">
+                        <h3>Thrity miles of sweat</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam
+                            optio debitis!</p>
+                        <p>27th January 2018</p>
+                        <button>read more</button>
+                    </section>
+                </section>
+            </article>
+            <section>
+                <section>
+                    <h2>Events</h2>
+                    <p>latest events</p>
+                    <a href="#">all events</a>
                 </section>
                 <section>
-                    <img src="" alt="">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>7th December 2018</p>
+                    <section>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>7th December 2018</p>
+                    </section>
+                    <section>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>7th December 2018</p>
+                    </section>
+                    <section>
+                        <img src="" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>7th December 2018</p>
+                    </section>
                 </section>
             </section>
         </section>
-    </section><!--News and Events-->
+        <!--News and Events-->
+    </div>
+    <!--container 80% 1280px-->
     <section>
-        <h2>About us</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur tenetur, a magni et facilis nostrum dignissimos totam eos vitae! Deserunt itaque praesentium commodi officiis?</p>
-    </section><!--About us-->
-    <section>
+        <div class="container">
+            <h2>About us</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur tenetur, a magni et facilis
+                nostrum dignissimos totam eos vitae! Deserunt itaque praesentium commodi officiis?</p>
+        </div>
+    </section>
+    <!--About us-->
+    <section class="container">
         <h2>Admissions</h2>
         <section>
             <h3>Admissions start this fall</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem optio ipsam qui adipisci vero fuga atque ut reiciendis sequi corrupti, libero dicta officiis minima.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem optio ipsam qui adipisci vero
+                fuga atque ut reiciendis sequi corrupti, libero dicta officiis minima.</p>
         </section>
         <section>
             <a href="#">fb</a>
@@ -147,8 +173,9 @@
                 <input type="button" value="Apply">
             </form>
         </section>
-    </section><!--Admissions-->
-    <footer>
+    </section>
+    <!--Admissions-->
+    <footer class="container">
         <div>
             <div>
                 <h3>Contact info</h3>
@@ -158,7 +185,8 @@
                 <p>email</p>
                 <p>phone</p>
             </div>
-        </div><!--contact info-->
+        </div>
+        <!--contact info-->
         <div>
             <p>copyright</p>
         </div>
