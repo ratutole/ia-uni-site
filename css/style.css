@@ -1,3 +1,32 @@
 html{
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    /* background: yellow; */
+    justify-content: space-between;
+}
+
+nav{
+    justify-self: end;
+    align-self: center;
+    padding-right: 20px;
+    /* background: green; */
+}
+
+
+/* Classes ************/
+
+.logo img{
+    height:73px;
+}
+
+.container{
+    width: 300px;
+    margin: 0 auto;
+}
