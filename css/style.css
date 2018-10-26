@@ -3,6 +3,8 @@
 :root {
     --button-unclicked: #0099cc;
     --button-clicked: #502174;
+    --sub-headings-weight: 500;
+    
   }
 
 html{
@@ -18,8 +20,9 @@ body{
 ul{
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
     margin: 0;
+    padding-top: 50px;
 }
 
 i{
@@ -51,6 +54,7 @@ button{
     background-color: var(--button-unclicked);
     color: white;
     font-size: 16px;
+    font-weight: var(--sub-headings-weight);
 }
 
 main{
@@ -86,21 +90,36 @@ h1{
     /* margin: 0; */
     position: fixed;
     background:rgba(0,0,0,.95);
-    color: white;
     width: 0;
     overflow: hidden;
     transition: all .5s;
     height: 100vh;
     top:0px;
     left: 0px;
+    /* padding-bottom: 50px; */
 }
 
+.mobile-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
 .menu-hidden{
-    width: 40%;
+    width: 50%;
 }
 
 .mobile-nav li{
-    padding: 10px;
+    padding: 15px;
+    font-size: 20px;
+    transition: all .5s;
+}
+
+.mobile-nav li:hover{
+    padding-left: 30px;
+    font-size: 20px;
+    background: var(--button-unclicked);
 }
 
 .logo{
