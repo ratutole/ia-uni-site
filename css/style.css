@@ -31,8 +31,11 @@ i{
     align-self: center;
 }
 
-h1{
+h1,h2{
     margin: 0;
+}
+
+h1{
     padding-top: 76px;
     padding-bottom: 0px;
     line-height: 48px;
@@ -57,6 +60,10 @@ button{
     font-weight: var(--sub-headings-weight);
 }
 
+button:hover{
+    background:var(--button-clicked);
+}
+
 main{
     background: url(/images/sittingonbench.jpg);
     color: white;
@@ -75,7 +82,7 @@ h1{
 /* Classes */
 
 .container{
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
 }
 
@@ -131,3 +138,13 @@ h1{
     /* align-self: center; */
 }
 
+/* PG-UG classes */
+.ug-pg>section{
+    background: yellow;
+    width: 280px;
+}
+
+.grad-header{
+    background-color:var(--button-unclicked);
+    height: 51px;
+}
