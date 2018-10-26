@@ -1,0 +1,114 @@
+/* Global styles */
+
+:root {
+    --button-unclicked: #0099cc;
+    --button-clicked: #502174;
+  }
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+i{
+    /* width: 20px; */
+    color: gray;
+    align-self: center;
+}
+
+h1{
+    margin: 0;
+    padding-top: 76px;
+    padding-bottom: 0px;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* margin-top: 10px; */
+}
+
+p{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+button{
+    /* text-decoration: none; */
+    border: none;
+    width: 190px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: var(--button-unclicked);
+    color: white;
+    font-size: 16px;
+}
+
+main{
+    background: url(/images/sittingonbench.jpg);
+    color: white;
+    height: 557px;
+    text-align: center;
+}
+
+main p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 36px;
+}
+/* Classes */
+
+.container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.head-section{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* min-height: 94px; */
+}
+
+.mobile-nav{
+    /* margin: 0; */
+    position: fixed;
+    background:rgba(0,0,0,.95);
+    color: white;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s;
+    height: 100vh;
+    top:0px;
+    left: 0px;
+}
+
+.menu-hidden{
+    width: 40%;
+}
+
+.mobile-nav li{
+    padding: 10px;
+}
+
+.logo{
+    align-self: center;
+}
+
+.logo img{
+    height: 73px;
+    /* align-self: center; */
+}
+

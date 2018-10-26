@@ -10,25 +10,25 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="node_modules/normalize.css/normalize.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" /> -->
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <header class="container">
+        <div class="head-section">
             <div class="logo"><img src="/images/logo/au.svg" alt="Academy University Logo"></div>
-            <nav>
-                <!-- <ul>
-                    <li>nav1</li>
-                    <li>nav2</li>
-                    <li>nav3</li>
-                    <li>nav4</li>
-                    <li>nav5</li>
-                </ul> -->
-                <i class="fas fa-bars"></i>
-            </nav>
+            <i class="fas fa-bars nav-toggler"></i>
+            <!-- <i class="nav-toggler"><a href="#">Menu</a></i> -->
         </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>nav3</li>
+                <li>nav4</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </header>
     <!--nav and header-->
     <main>
@@ -36,8 +36,8 @@
             <h1>Getting started with academic university</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus maiores, inventore ea minus
                 libero?</p>
-            <div class="center-item">
-                <button>read more</button>
+                <div class="center-item">
+                    <button>read more</button>
             </div>
         </div>
     </main>
@@ -70,24 +70,24 @@
                 <hr>
             </div>
             <div class="research-items">
-            <section>
-                <img src="/images/ryan-jacobson-687814-unsplash.jpg" alt="A parked bicycle">
-                <h3>a stone that glows</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
-                <button>read more</button>
-            </section>
-            <section>
-                <img src="images/rawpixel-659493-unsplash.jpg" alt="Two women holding papers">
-                <h3>a stone that glows</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
-                <button>read more</button>
-            </section>
-            <section>
-                <img src="images/taras-shypka-424928-unsplash.jpg" alt="A screen with code">
-                <h3>a stone that glows</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
-                <button>read more</button>
-            </section>
+                <section>
+                    <img src="/images/ryan-jacobson-687814-unsplash.jpg" alt="A parked bicycle">
+                    <h3>a stone that glows</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                    <button>read more</button>
+                </section>
+                <section>
+                    <img src="images/rawpixel-659493-unsplash.jpg" alt="Two women holding papers">
+                    <h3>a stone that glows</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                    <button>read more</button>
+                </section>
+                <section>
+                    <img src="images/taras-shypka-424928-unsplash.jpg" alt="A screen with code">
+                    <h3>a stone that glows</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                    <button>read more</button>
+                </section>
             </div>
         </article>
         <!--Research-->
@@ -104,37 +104,37 @@
                         <h3>a guide to graduation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam
                             optio debitis!</p>
-                        <p>24th June 2018</p>
-                        <button>read more</button>
-                    </section>
+                            <p>24th June 2018</p>
+                            <button>read more</button>
+                        </section>
+                        <section>
+                            <img src="images/velobar-177055-unsplash.jpg" alt="A professional cycler">
+                            <h3>Thrity miles of sweat</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam
+                                optio debitis!</p>
+                                <p>27th January 2018</p>
+                                <button>read more</button>
+                            </section>
+                        </section>
+                    </article>
                     <section>
-                        <img src="images/velobar-177055-unsplash.jpg" alt="A professional cycler">
-                        <h3>Thrity miles of sweat</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, cum sunt perspiciatis veniam
-                            optio debitis!</p>
-                        <p>27th January 2018</p>
-                        <button>read more</button>
-                    </section>
-                </section>
-            </article>
-            <section>
-                <section>
-                    <h2>Events</h2>
-                    <p>latest events</p>
-                    <a href="#">all events</a>
-                </section>
-                <section>
-                    <section>
-                        <img src="images/tim-foster-192465-unsplash.jpg" alt="View of stars at night">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>7th December 2018</p>
-                    </section>
-                    <section>
-                        <img src="images/annie-spratt-196010-unsplash.jpg" alt="Girl taking pictures">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>7th December 2018</p>
-                    </section>
-                    <section>
+                        <section>
+                            <h2>Events</h2>
+                            <p>latest events</p>
+                            <a href="#">all events</a>
+                        </section>
+                        <section>
+                            <section>
+                                <img src="images/tim-foster-192465-unsplash.jpg" alt="View of stars at night">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>7th December 2018</p>
+                            </section>
+                            <section>
+                                <img src="images/annie-spratt-196010-unsplash.jpg" alt="Girl taking pictures">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>7th December 2018</p>
+                            </section>
+                            <section>
                         <img src="images/richard-hodonicky-527729-unsplash.jpg" alt="A wild red flower">
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>7th December 2018</p>
@@ -150,47 +150,47 @@
             <h2>About us</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur tenetur, a magni et facilis
                 nostrum dignissimos totam eos vitae! Deserunt itaque praesentium commodi officiis?</p>
-        </div>
-    </section>
-    <!--About us-->
-    <section class="container">
-        <h2>Admissions</h2>
-        <section>
-            <h3>Admissions start this fall</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem optio ipsam qui adipisci vero
-                fuga atque ut reiciendis sequi corrupti, libero dicta officiis minima.</p>
+            </div>
         </section>
-        <section>
-            <a href="#">fb</a>
-            <a href="#">yt</a>
-            <a href="#">in</a>
-            <a href="#">tw</a>
-        </section>
-        <section>
-            <form action="#">
+        <!--About us-->
+        <section class="container">
+            <h2>Admissions</h2>
+            <section>
+                <h3>Admissions start this fall</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem optio ipsam qui adipisci vero
+                    fuga atque ut reiciendis sequi corrupti, libero dicta officiis minima.</p>
+                </section>
+                <section>
+                    <a href="#">fb</a>
+                    <a href="#">yt</a>
+                    <a href="#">in</a>
+                    <a href="#">tw</a>
+                </section>
+                <section>
+                    <form action="#">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="contact">contact</label>
+                            <input type="text" id="contact">
+                        </div>
+                        <div>
+                            <label for="email">email</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div>
+                            <label for="course">course</label>
+                            <input type="text" id="course">
+                        </div>
+                        <input type="button" value="Apply">
+                    </form>
+                </section>
+            </section>
+            <!--Admissions-->
+            <footer class="container">
                 <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                </div>
-                <div>
-                    <label for="contact">contact</label>
-                    <input type="text" id="contact">
-                </div>
-                <div>
-                    <label for="email">email</label>
-                    <input type="text" id="email">
-                </div>
-                <div>
-                    <label for="course">course</label>
-                    <input type="text" id="course">
-                </div>
-                <input type="button" value="Apply">
-            </form>
-        </section>
-    </section>
-    <!--Admissions-->
-    <footer class="container">
-        <div>
             <div>
                 <h3>Contact info</h3>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -205,6 +205,7 @@
             <p>copyright</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
