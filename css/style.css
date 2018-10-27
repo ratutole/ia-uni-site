@@ -35,6 +35,12 @@ h1,h2{
     margin: 0;
 }
 
+h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
 h1{
     padding-top: 76px;
     padding-bottom: 0px;
@@ -190,3 +196,21 @@ h1{
     height: 173px;
 }
 
+.research{
+    text-align: center;
+}
+
+.carusel-selectors{
+    display: flex;
+    justify-content: center;
+}
+
+.carusel-selectors>*{
+    margin: 2px;
+}
+
+.carusel-selectors>*:hover{
+    /* margin: 2px; */
+    background: black;
+    /* border-radius: 50%; */
+}
