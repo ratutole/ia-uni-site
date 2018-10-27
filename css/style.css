@@ -95,10 +95,19 @@ main p{
 h1{
     font-size: 36px;
 }
+
+img{
+    width: 100%;
+}
 /* Classes */
 
 .container{
     width: 280px;
+    margin: 0 auto;
+}
+
+.inner-container{
+    width: 240px;
     margin: 0 auto;
 }
 
@@ -198,6 +207,10 @@ h1{
 
 .research{
     text-align: center;
+}
+
+.research h3{
+    text-transform: uppercase;
 }
 
 .carusel-selectors{
