@@ -44,24 +44,34 @@ h1{
 }
 
 p{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
 }
 
 button{
     /* text-decoration: none; */
+    background: none;
     border: none;
     width: 190px;
     height: 50px;
     text-transform: uppercase;
-    background-color: var(--button-unclicked);
-    color: white;
-    font-size: 16px;
+    color: black;
+    font-size: 14px;
     font-weight: var(--sub-headings-weight);
 }
 
 button:hover{
+    color: var(--button-clicked);
+}
+
+main button{
+    background-color: var(--button-unclicked);
+    color: white;
+}
+
+main button:hover{
     background:var(--button-clicked);
+    color: white;
 }
 
 main{
@@ -73,7 +83,7 @@ main{
 
 main p{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 h1{
@@ -119,13 +129,13 @@ h1{
 
 .mobile-nav li{
     padding: 15px;
-    font-size: 20px;
+    font-size: 16px;
     transition: all .5s;
 }
 
 .mobile-nav li:hover{
     padding-left: 30px;
-    font-size: 20px;
+    font-size: 16px;
     background: var(--button-unclicked);
 }
 
@@ -140,11 +150,43 @@ h1{
 
 /* PG-UG classes */
 .ug-pg>section{
-    background: yellow;
+    background: white;
     width: 280px;
+    text-align: center;
+    position: relative;
+    top: -51px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .15);
 }
 
-.grad-header{
-    background-color:var(--button-unclicked);
-    height: 51px;
+.ug-pg>section p{
+    margin-top: 25px;
 }
+
+.ug-pg>section:nth-of-type(1){
+    margin-bottom: 55px;
+}
+
+
+
+.grad-header{
+    color: white;
+    background-color:var(--button-clicked);
+    height: 51px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    /* font-weight: var(--sub-headings-weight); */
+}
+.grad-header h2{
+    font-weight: 500;
+    font-size: 20px;
+    /* color: green; */
+}
+
+
+.grad-body{
+    height: 173px;
+}
+
