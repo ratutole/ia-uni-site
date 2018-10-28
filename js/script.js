@@ -6,14 +6,10 @@ const MENUITEMS = document.querySelector('.mobile-nav');
 const CARUSELS = document.querySelectorAll('.carusel');
 const CARUSELSELECTORS = document.querySelectorAll('.carusel-selectors i');
 
-
-// const CS1 = document.querySelector('#cr-i1');
-// const CS2 = document.querySelector('#cr-i2');
-// const CS3 = document.querySelector('#cr-i3');
-
 // Responsive Navigation
 MENU.addEventListener('click', function () {
   MENUITEMS.classList.toggle('menu-hidden');
+  // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 });
 
 // Carusel Slider
