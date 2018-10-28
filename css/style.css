@@ -297,6 +297,24 @@ img{
     display: flex;
 }
 
+/* About Us */
+.about-us{
+    background: url(/images/ben-duchac-66002-unsplash.jpg);
+    text-align: center;
+    height: 425px;
+    color: white;
+}
+
+.about-us h2{
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.about-us p{
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
 /* global fix styles */
 
 .space-below{
@@ -306,3 +324,5 @@ img{
 .section-below{
     margin-bottom: 60px;
 }
+
+
