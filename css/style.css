@@ -227,3 +227,17 @@ img{
     background: black;
     /* border-radius: 50%; */
 }
+
+.news-events{
+    margin-top: 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.news-events p{
+    font-size: 16px;
+}
+
+.hap-header p, .hap-header a{
+    font-size: 14px;
+}
