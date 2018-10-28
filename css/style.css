@@ -27,7 +27,9 @@ header{
 footer{
     text-align: center;
     background: #333333;
-    height: 370px;
+    height: 430px;
+    color: white;
+    /* font-size: 8px; */
 }
 
 ul{
@@ -244,6 +246,21 @@ img{
     /* border-radius: 50%; */
 }
 
+/* The dot selectors */
+
+.carusel-selectors i:nth-of-type(even){
+    display: none;
+}
+
+.inactive{
+    display: none ;
+}
+
+.active{
+    display: block;
+}
+
+
 .news-events{
     margin-top: 60px;
     text-align: center;
@@ -391,7 +408,7 @@ input[type="button"]{
     border-radius: 60px;
     /* box-shadow: 0px 0px 2px #888; */
     padding: 0.5em 0.6em;
-    transition: all 1s;
+    transition: all .3s;
 }
 
 .social{
@@ -399,7 +416,7 @@ input[type="button"]{
 }
 
 .social i:hover{
-    font-size: 22px;
+    font-size: 25px;
 }
 
 i.fa-facebook-square{
@@ -416,6 +433,24 @@ i.fa-linkedin{
 
 i.fa-twitter-square{
     background: #55acee;
+}
+
+
+/* Copyright */
+
+.copy{
+    background: #000;
+    height: 99px;
+    display: flex;
+}
+
+.copy-content{
+    align-self: center;
+}
+
+.copy p{
+    font-size: 14px;    
+    margin: 0;
 }
 
 /* global fix styles */

@@ -9,6 +9,10 @@ const CS1 = document.querySelector('#cr-i1');
 const CS2 = document.querySelector('#cr-i2');
 const CS3 = document.querySelector('#cr-i3');
 
+
+
+
+
 // Responsive Navigation
 MENU.addEventListener('click', function(){
     MENUITEMS.classList.toggle('menu-hidden');
@@ -20,6 +24,10 @@ var reset = function(){
       CARUSELS[i].style.display = 'none';
     }
   };
+
+var resetButtons = function(){
+
+};
   
   
   var startCarousel = function(){
@@ -39,7 +47,9 @@ var reset = function(){
     CARUSELS[1].style.display = 'block';
   });
   CS3.addEventListener('click',function(e){
-    reset();
+    reset(); 
     CARUSELS[2].style.display = 'block';
   });
   
+  // active carusel listeners
+ 
