@@ -241,16 +241,10 @@ img{
 }
 
 .carusel-selectors>*:hover{
-    /* margin: 2px; */
-    background: black;
-    /* border-radius: 50%; */
+    color: black;
 }
 
 /* The dot selectors */
-
-.carusel-selectors i:nth-of-type(even){
-    display: none;
-}
 
 .inactive{
     display: none ;
