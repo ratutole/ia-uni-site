@@ -17,6 +17,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    width: 100vw;
+    position: fixed;
+    background: white;
+    z-index: 1;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -85,6 +92,7 @@ main{
     color: white;
     height: 557px;
     text-align: center;
+    padding-top: 60px;
 }
 
 main p{
@@ -98,6 +106,7 @@ h1{
 
 img{
     width: 100%;
+    margin: 0;
 }
 /* Classes */
 
@@ -112,7 +121,7 @@ img{
 }
 
 .head-section{
-    margin-top: 10px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     /* min-height: 94px; */
@@ -209,8 +218,9 @@ img{
     text-align: center;
 }
 
-.research h3{
+.research h3, .news-events h3{
     text-transform: uppercase;
+    /* margin: 0; */
 }
 
 .carusel-selectors{
@@ -238,6 +248,61 @@ img{
     font-size: 16px;
 }
 
+.news-events h3{
+    margin: 0;
+}
+
+.bord{
+    border: 1px solid black;
+    margin: 0;
+    border-top: 0;
+    height: 204px;
+    /* border-top: none; */
+} 
+
+.news{
+    display: flex;
+    flex-direction: column;
+}
+
 .hap-header p, .hap-header a{
     font-size: 14px;
+}
+
+/* Events */
+.events{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-image{
+    width: 106px;
+    /* height: 146px; */
+}
+
+.event-content{
+    width: 174px;
+    text-align: left;
+    border: 1px solid black;
+    border-left: 0;
+    height: 133.8px;
+}
+
+.event-content p{
+    padding: 10px;
+    margin: 0;
+}
+
+.event-items{
+    display: flex;
+}
+
+/* global fix styles */
+
+.space-below{
+    margin-bottom: 30px;
+}
+
+.section-below{
+    margin-bottom: 60px;
 }
