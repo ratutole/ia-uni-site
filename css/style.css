@@ -539,10 +539,22 @@ i.fa-twitter-square{
         transition: all .5s;
     }
 
-    /* .grad-header:hover{
-        background-color: var(--button-clicked);
-    } */
+    .carusel-selectors{
+        display: none;
+        
+    }
 
+    .research-items{
+        display: flex;
+        /* width: 33.3%; */
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .carusel{
+        display: block !important;
+        width: 33%;
+    }
     /*  */
 }
 /* Media query Pc end */
