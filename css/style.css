@@ -560,24 +560,13 @@ i.fa-twitter-square{
 
 
     /* New and Events Section */
-    .news-events{
-        /* display: flex; */
-    }
 
     /****** News */
-    .news-section{
-        display: flex;
-        justify-content: space-between;
+    .news-container{
+        background: #000;
     }
 
-    .news{
-        width: 48%;
-    }
+    
 
-    .news-section img{
-        /* height: 301px; */
-
-    }
-
-}
+    
 /* Media query Pc end */
