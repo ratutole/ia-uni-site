@@ -539,6 +539,8 @@ i.fa-twitter-square{
         transition: all .5s;
     }
 
+    /* Research Section */
+
     .carusel-selectors{
         display: none;
         
@@ -555,6 +557,27 @@ i.fa-twitter-square{
         display: block !important;
         width: 33%;
     }
-    /*  */
+
+
+    /* New and Events Section */
+    .news-events{
+        /* display: flex; */
+    }
+
+    /****** News */
+    .news-section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news{
+        width: 48%;
+    }
+
+    .news-section img{
+        /* height: 301px; */
+
+    }
+
 }
 /* Media query Pc end */
