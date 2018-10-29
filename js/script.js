@@ -6,10 +6,30 @@ const MENUITEMS = document.querySelector('.mobile-nav');
 const CARUSELS = document.querySelectorAll('.carusel');
 const CARUSELSELECTORS = document.querySelectorAll('.carusel-selectors i');
 
+// Variables ug-pg
+const BTNUG = document.querySelector('.btn-clr');
+const BTNPG = document.querySelector('.btn-clr2');
+
+const UGHD = document.querySelector('.undergraduate');
+const PGHD = document.querySelector('.postgraduate');
+
+
 // Responsive Navigation
 MENU.addEventListener('click', function () {
   MENUITEMS.classList.toggle('menu-hidden');
   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+});
+
+
+// UG PG color change
+UGHD.addEventListener('mouseover',function(){
+  this.style.backgroundColor = '#502174';
+  BTNUG.style.color = '#502174';
+  
+});
+UGHD.addEventListener('mouseleave',function(){
+  this.style.backgroundColor ='rgba(255,255,255,0.15)';
+  BTNUG.style.color = 'black';
 });
 
 // Carusel Slider

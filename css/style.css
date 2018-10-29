@@ -119,18 +119,19 @@ img{
 /* Classes */
 
 .container{
-    width: 280px;
+    width: 94%;
     margin: 0 auto;
 }
 
 .inner-container{
-    width: 240px;
+    width: 94%;
     margin: 0 auto;
 }
 
 .head-section{
     padding-top: 10px;
     display: flex;
+    width: 94%;
     justify-content: space-between;
     /* min-height: 94px; */
 }
@@ -182,9 +183,10 @@ img{
 
 /* PG-UG classes */
 .ug-pg>section{
-    background: white;
-    width: 280px;
+    /* background: white; */
+    /* width: 100%; */
     text-align: center;
+    margin: 0 auto;
     position: relative;
     top: -51px;
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .15);
@@ -197,7 +199,6 @@ img{
 .ug-pg>section:nth-of-type(1){
     margin-bottom: 55px;
 }
-
 
 
 .grad-header{
@@ -292,17 +293,19 @@ img{
     flex-direction: column;
 }
 
-.event-image{
-    width: 106px;
+/* .event-image{ */
+    /* width: 106px; */
     /* height: 146px; */
-}
+/* } */
 
 .event-content{
-    width: 174px;
+    flex:1;
+    /* width: 174px; */
+
     text-align: left;
     border: 1px solid black;
     border-left: 0;
-    height: 133.8px;
+    height: auto;
 }
 
 .event-content p{
@@ -458,4 +461,85 @@ i.fa-twitter-square{
     margin-bottom: 60px;
 }
 
+@media screen and (min-width:767px){
+    body{
+        background:yellow;
+    }
 
+    .nav-toggler{
+        display: none;
+    }
+
+
+    /* Navigation to PC */
+    .flex-it{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .a-center{
+        align-self: center; 
+    }
+
+    .mobile-nav{
+        width: 150%;
+        /* flex:1; */
+        background: none;
+        position: static;
+        height: auto;
+        width: auto;
+        align-self: center;
+    }
+    
+    .mobile-nav ul{
+        display: flex;
+        padding: 0;
+        align-self: center;
+        /* height: auto; */
+    }
+
+    .mobile-nav li{
+        align-self:flex-start;  
+    }
+
+    .mobile-nav li:hover{
+        padding-left: 15px;
+    }
+
+    .mobile-nav a{
+        color: black;
+    }
+
+    /* Landing section */
+    main{
+        text-align: left;
+    }
+
+    /* Ug and pg ********************/
+
+    .ug-pg{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ug-pg section{
+        width: 48%; 
+        margin: 0;
+        /* width: 475px; */
+        /* height: 246px; */
+        /* min-height:  */
+    }
+
+    .ug-pg > section:nth-of-type(1){
+        margin-bottom: 0;
+    }
+
+    .grad-header{    
+        background-color: rgba(255,255,255,0.15);
+        transition: all .5s;
+    }
+
+    /* .grad-header:hover{
+        background-color: var(--button-clicked);
+    } */
+}
