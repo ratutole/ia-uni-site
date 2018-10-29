@@ -274,13 +274,14 @@ img{
     border: 1px solid black;
     margin: 0;
     border-top: 0;
-    height: 204px;
+    height: auto;
     /* border-top: none; */
 } 
 
 .news{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .hap-header p, .hap-header a{
@@ -315,6 +316,7 @@ img{
 
 .event-items{
     display: flex;
+    margin-bottom: 30px;
 }
 
 /* About Us */
@@ -323,6 +325,11 @@ img{
     text-align: center;
     height: 425px;
     color: white;
+    display: flex;
+}
+
+.about-content{
+    align-self: center;
 }
 
 .about-us h2{
@@ -560,11 +567,52 @@ i.fa-twitter-square{
 
 
     /* New and Events Section */
-
+    .news-events{
+        display: flex;
+    }
     /****** News */
     .news-container{
-        background: #000;
+        display: flex;
+        flex-direction: column;
+        background: orange;
+        flex:2;
     }
+
+    .news-content{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .events{
+        /* display: flex; */
+        background: steelblue;
+        flex: 1;
+    }
+
+    .event-content{
+        background: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .event-items{
+        margin-bottom: 10px;
+    }
+    .news{
+        width: 48%;
+    }
+
+    .date{
+        /* background: #000; */
+        font-size: 12px !important;
+    }
+
+   /* .about-us{
+       display: flex;
+   } */
 
     
 }
