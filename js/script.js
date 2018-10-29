@@ -14,6 +14,32 @@ const UGHD = document.querySelector('.undergraduate');
 const PGHD = document.querySelector('.postgraduate');
 
 
+// Functions *****************************
+var changeColor  = function(grad,btn){
+  grad.addEventListener('mouseover',function(){
+    this.style.backgroundColor = '#502174';
+    btn.style.color = '#502174';
+    
+  });
+  grad.addEventListener('mouseleave',function(){
+    this.style.backgroundColor ='rgba(255,255,255,0.15)';
+    btn.style.color = 'black';
+  });
+};
+
+// Change color on grad-buttons
+var changeColorBtn  = function(grad,btn){
+  btn.addEventListener('mouseover',function(){
+    grad.style.backgroundColor = '#502174';
+    this.style.color = '#502174';
+    
+  });
+  btn.addEventListener('mouseleave',function(){
+    grad.style.backgroundColor ='rgba(255,255,255,0.15)';
+    this.style.color = 'black';
+  });
+};
+
 // Responsive Navigation
 MENU.addEventListener('click', function () {
   MENUITEMS.classList.toggle('menu-hidden');
@@ -21,16 +47,13 @@ MENU.addEventListener('click', function () {
 });
 
 
-// UG PG color change
-UGHD.addEventListener('mouseover',function(){
-  this.style.backgroundColor = '#502174';
-  BTNUG.style.color = '#502174';
-  
-});
-UGHD.addEventListener('mouseleave',function(){
-  this.style.backgroundColor ='rgba(255,255,255,0.15)';
-  BTNUG.style.color = 'black';
-});
+// UG PG color change grad-header
+changeColor(UGHD,BTNUG);
+changeColor(PGHD,BTNPG);
+
+changeColorBtn(UGHD,BTNUG);
+changeColorBtn(PGHD,BTNPG);
+// 
 
 // Carusel Slider
 const reset = function () {
