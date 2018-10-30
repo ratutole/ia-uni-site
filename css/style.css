@@ -154,7 +154,9 @@ img{
     text-decoration: none;
 }
 
-
+.nav-toggler{
+    padding: 10px;
+}
 
 .menu-hidden{
     width: 50%;
@@ -248,11 +250,13 @@ img{
 /* The dot selectors */
 
 .inactive{
-    display: none ;
+    display: none;
 }
 
 .active{
-    display: block;
+    /* height: 75px; */
+    display: block !important;
+    /* transition: all 5s; */
 }
 
 
@@ -503,6 +507,20 @@ i.fa-twitter-square{
         display: none;
     }
 
+    h1{
+        padding-top: 90px;
+        font-size: 48px;
+        width: 80%;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    main p{
+        margin-top: 50px;
+        margin-bottom: 55px;
+    }
 
     /* Navigation to PC */
     .flex-it{
@@ -561,6 +579,10 @@ i.fa-twitter-square{
         /* width: 475px; */
         /* height: 246px; */
         /* min-height:  */
+    }
+
+    .ug-pg>section p{
+        font-size: 16px;
     }
 
     .ug-pg > section:nth-of-type(1){
@@ -715,7 +737,7 @@ i.fa-twitter-square{
     
     .admission-form{
         /* background: #000; */
-        width: 110%;
+        width: 120%;
         max-width: 500px;
     }
    
@@ -759,6 +781,10 @@ i.fa-twitter-square{
         /* justify-content: space-between; */
     }
 
+    .contact-address p{
+        font-size: 14px;
+    }
+
     .address-container{
         display: flex;
         /* background: #000; */
@@ -786,6 +812,36 @@ i.fa-twitter-square{
         min-height: 60px;
         max-height: 99px;
     }
-}
+
+    .toggle-search{
+        display: flex;
+        width: 100vw;
+        height: 75px;
+        background: var(--button-unclicked);
+        justify-content: flex-end;
+        /* transition: all 5s; */
+    }
+
+    .search-container{
+        align-self: center;
+        margin-right: 50px;
+    }
+
+    .search-container i{
+        margin-left: 10px;
+    }
+
+    .toggle-search input{
+        min-height: 35px;
+        min-width: 300px;
+    }
+
     
+}
 /* Media query Pc end */
+@media screen and (min-width:1024px){
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+}

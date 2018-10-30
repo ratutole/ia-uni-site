@@ -13,6 +13,10 @@ const BTNPG = document.querySelector('.btn-clr2');
 const UGHD = document.querySelector('.undergraduate');
 const PGHD = document.querySelector('.postgraduate');
 
+// Variables search bar
+const SBAR = document.querySelector('.hide-bar');
+const SBTN = document.querySelector('.searchbar');
+
 
 // Functions *****************************
 var changeColor  = function(grad,btn){
@@ -44,6 +48,20 @@ var changeColorBtn  = function(grad,btn){
 MENU.addEventListener('click', function () {
   MENUITEMS.classList.toggle('menu-hidden');
   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+});
+
+
+// Search bar ******************
+
+var hideBar = function(){
+  SBAR.style.display = 'none';
+};
+
+hideBar();//hide bar on load
+
+SBTN.addEventListener('click',function(){
+  // SBAR.style.display = 'block';
+  SBAR.classList.toggle('active');
 });
 
 
