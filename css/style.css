@@ -6,6 +6,7 @@
     --sub-hd-wgt: 500;
     --grad-color: #777777;
     --border-news-events: rgba(80,30,116,0.4);
+    --white:#ffffff;
     
 }
 
@@ -300,10 +301,6 @@ img{
     height: 75px !important;
 }
 
-.news h2{
-
-}
-
 .news-events{
     margin-top: 60px;
     text-align: center;
@@ -334,11 +331,19 @@ img{
     flex-direction: column;
     margin-bottom: 30px;
     border: 1px solid var(--border-news-events);
+    border-top: 0px;
 }
 
 .hap-header p, .hap-header a{
     font-size: 14px;
 }
+
+.hap-header p{
+    margin-top: 4px;
+    padding-bottom: 15px
+    ;
+}
+
 
 /* Events */
 .events{
@@ -391,6 +396,7 @@ img{
 .about-us h2{
     font-weight: 500;
     padding-top: 30px;
+    text-transform: capitalize;
 }
 
 .about-us p{
@@ -413,13 +419,13 @@ img{
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
-    border-left: 7px solid;
+    border: 1px solid var(--border-news-events);
+    border-left: 7px solid var(--secondary-color);
 }
 
 .form-item input{
     border: 0px;
-    border-left: 1px solid;
+    border-left: 1px solid var(--border-news-events);
     /* margin-bottom: 20px; */
     /* padding-bottom: 20px; */
 }
@@ -434,12 +440,24 @@ img{
 .submit-form{
     text-align: center;
 }
+
 input[type="button"]{
     height: 37px;
     width: 110px;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
+    border: none;
+}
+
+.submit-form input[type="button"]{
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.submit-form input[type="button"]:hover{
+    background: var(--primary-color);
+    /* color: var(--white); */
 }
 
 
@@ -681,6 +699,9 @@ i.fa-twitter-square{
         display: flex;
         justify-content: space-between;
         margin-right: 15px;
+        /* background: yellow; */
+        height: 97%;
+        /* margin: 0; */
         /* background: #000; */
     }
 
@@ -762,6 +783,7 @@ i.fa-twitter-square{
     .hap-header{
         text-align: left;
         padding-left: 15px;
+        /* background: #000; */
     }
     
     /* Admissions */
@@ -781,7 +803,8 @@ i.fa-twitter-square{
     }
 
     .adm-header h2{
-        padding-bottom: 55px;
+        padding-bottom: 50px;
+        color: var(--secondary-color);
     }
 
     .admission-content{
@@ -804,6 +827,8 @@ i.fa-twitter-square{
     .submit-form{
         text-align: right;
     }
+
+   
 
 
     /* Contact */
@@ -896,6 +921,8 @@ i.fa-twitter-square{
         min-height: 35px;
         min-width: 300px;
     }
+
+
 
     
 }
