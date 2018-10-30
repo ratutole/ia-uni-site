@@ -1,6 +1,7 @@
 // Variables navbar
 const MENU = document.querySelector('.nav-toggler');
 const MENUITEMS = document.querySelector('.mobile-nav');
+const COVER = document.querySelector('.cover');
 
 // Variables research slider
 const CARUSELS = document.querySelectorAll('.carusel');
@@ -14,7 +15,7 @@ const UGHD = document.querySelector('.undergraduate');
 const PGHD = document.querySelector('.postgraduate');
 
 // Variables search bar
-const SBAR = document.querySelector('.hide-bar');
+const SBAR = document.querySelector('.toggle-search');
 const SBTN = document.querySelector('.searchbar');
 
 
@@ -44,20 +45,45 @@ var changeColorBtn  = function(grad,btn){
   });
 };
 
+//Check for width to change color of ug-pg
+var screenBreak = function(){
+  w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+  const targetWidth = 767;
+  if ( w >= targetWidth) {     
+    //Add your javascript for screens wider than or equal to 768 here
+      changeColor(UGHD,BTNUG);
+      changeColor(PGHD,BTNPG);
+      
+      changeColorBtn(UGHD,BTNUG);
+      changeColorBtn(PGHD,BTNPG);
+      // console.log('greater than 767');
+    }
+    else {
+      // console.log('less than 767');
+    }
+  // 
+};
+
 // Responsive Navigation
 MENU.addEventListener('click', function () {
   MENUITEMS.classList.toggle('menu-hidden');
+  COVER.classList.toggle('cover-bg');
   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+});
+
+COVER.addEventListener('click',function(){
+    this.classList.toggle('cover-bg');
+    MENUITEMS.classList.toggle('menu-hidden');
 });
 
 
 // Search bar ******************
 
-var hideBar = function(){
-  SBAR.style.display = 'none';
-};
+// var hideBar = function(){
+//   SBAR.style.display = 'none';
+// };
 
-hideBar();//hide bar on load
+// hideBar();//hide bar on load
 
 SBTN.addEventListener('click',function(){
   // SBAR.style.display = 'block';
@@ -66,12 +92,9 @@ SBTN.addEventListener('click',function(){
 
 
 // UG PG color change grad-header
-changeColor(UGHD,BTNUG);
-changeColor(PGHD,BTNPG);
+screenBreak();
 
-changeColorBtn(UGHD,BTNUG);
-changeColorBtn(PGHD,BTNPG);
-// 
+
 
 // Carusel Slider
 const reset = function () {
@@ -80,9 +103,6 @@ const reset = function () {
   }
 };
 
-// var resetButtons = function(){
-
-// };
 
 var startCarousel = function () {
   reset();

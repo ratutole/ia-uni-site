@@ -1,9 +1,11 @@
 /* Global styles */
 
 :root {
-    --button-unclicked: #0099cc;
-    --button-clicked: #502174;
-    --sub-headings-weight: 500;
+    --secondary-color: #0099cc;
+    --primary-color: #502174;
+    --sub-hd-wgt: 500;
+    --grad-color: #777777;
+    --border-news-events: rgba(80,30,116,0.4);
     
 }
 
@@ -32,6 +34,18 @@ footer{
     /* font-size: 8px; */
 }
 
+hr{
+    width: 50%;
+    /* float: left; */
+    /* display: inline-block; */
+    /* text-align: left; */
+    color: var(--secondary-color);
+    opacity: .4;
+    margin-left: 0;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -52,14 +66,14 @@ h1,h2,h3{
 
 h2{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: var(--sub-hd-wgt,500);
 }
 
 
 h1{
     padding-top: 76px;
     padding-bottom: 0px;
-    line-height: 48px;
+    line-height: 42px;
     text-transform: uppercase;
     /* margin-top: 10px; */
 }
@@ -78,27 +92,28 @@ button{
     text-transform: uppercase;
     color: black;
     font-size: 14px;
-    font-weight: var(--sub-headings-weight);
+    font-weight: var(--sub-hd-wgt);
 }
 
 button:hover{
-    color: var(--button-clicked);
+    color: var(--primary-color);
 }
 
 main button{
-    background-color: var(--button-unclicked);
+    background-color: var(--secondary-color);
     color: white;
 }
 
 main button:hover{
-    background:var(--button-clicked);
+    background:var(--primary-color);
     color: white;
 }
 
 main{
     background: url(/images/sittingonbench.jpg);
     color: white;
-    height: 557px;
+    /* height: 530px; */
+    min-height: 567px;
     text-align: center;
     padding-top: 60px;
 }
@@ -142,7 +157,7 @@ img{
     background:rgba(0,0,0,.95);
     width: 0;
     overflow: hidden;
-    transition: all .5s;
+    transition: all .3s;
     height: 100vh;
     top:0px;
     left: 0px;
@@ -156,6 +171,14 @@ img{
 
 .nav-toggler{
     padding: 10px;
+    color: #000;
+}
+
+.toggle-search{display: none;}
+
+
+.fa-search{
+    color: #000;
 }
 
 .menu-hidden{
@@ -165,13 +188,22 @@ img{
 .mobile-nav li{
     padding: 15px;
     font-size: 16px;
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .mobile-nav li:hover{
     padding-left: 30px;
     font-size: 16px;
-    background: var(--button-unclicked);
+    background: var(--secondary-color);
+}
+
+
+.cover-bg{
+    /* display: none; */
+    background: rgba(0,0,0,0.65);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 .logo{
@@ -196,6 +228,7 @@ img{
 
 .ug-pg>section p{
     margin-top: 25px;
+    color: var(--grad-color);
 }
 
 .ug-pg>section:nth-of-type(1){
@@ -205,14 +238,14 @@ img{
 
 .grad-header{
     color: white;
-    background-color:var(--button-clicked);
+    background-color:var(--primary-color);
     height: 51px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    /* font-weight: var(--sub-headings-weight); */
+    /* font-weight: var(--sub-headings-weigh); */
 }
 .grad-header h2{
     font-weight: 500;
@@ -229,12 +262,22 @@ img{
     text-align: center;
 }
 
+
 .research h3, .news-events h3{
-    text-transform: uppercase;
-    /* margin: 0; */
+    margin-top: 15px;
+    font-weight: var(--sub-hd-wgt,500);   
+}
+
+.news-events h2{
+    color: var(--secondary-color);
+}
+
+.carusel{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .15);
 }
 
 .carusel-selectors{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -254,16 +297,17 @@ img{
 }
 
 .active{
-    /* height: 75px; */
-    display: block !important;
-    /* transition: all 5s; */
+    height: 75px !important;
 }
 
+.news h2{
+
+}
 
 .news-events{
     margin-top: 60px;
     text-align: center;
-    text-transform: capitalize;
+    /* font-size: 12px; */
 }
 
 .news-events p{
@@ -281,21 +325,15 @@ img{
 .bord{
     position: relative;
     top: -3.5px;
-    border: 1px solid black;
     margin: 0;
     border-top: 0;
-    height: auto;
-    /* border-top: none; */
 } 
-
-/* .news-bord{
-    border: 1px solid black;
-} */
 
 .news{
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    border: 1px solid var(--border-news-events);
 }
 
 .hap-header p, .hap-header a{
@@ -315,17 +353,15 @@ img{
 
 .event-content{
     flex:1;
-    /* width: 174px; */
-
     text-align: left;
-    /* border: 1px solid black; */
     border-left: 0;
     height: auto;
 }
 
 .event-bord{
-    border: 1px solid black;
-    min-height: 159px;
+    border: 1px solid var(--border-news-events);
+    min-height: 158px;
+    border-left: 0;
 }
 
 .event-content p{
@@ -342,9 +378,10 @@ img{
 .about-us{
     background: url(/images/ben-duchac-66002-unsplash.jpg);
     text-align: center;
-    height: 425px;
+    min-height: 400px;
     color: white;
     display: flex;
+    margin-top: 50px;
 }
 
 .about-content{
@@ -359,19 +396,20 @@ img{
 .about-us p{
     margin-top: 40px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
 /* admissions */
 .admissions{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 
 
 .form-item{
-    height: 30px;
+    min-height: 35px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -499,8 +537,12 @@ i.fa-twitter-square{
 *****************************************************************************
  */
 @media screen and (min-width:767px){
-    body{
+    /* body{
         background:yellow;
+    } */
+
+    main{
+        min-height: 500px;
     }
 
     .nav-toggler{
@@ -514,7 +556,7 @@ i.fa-twitter-square{
     }
 
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     main p{
@@ -591,14 +633,19 @@ i.fa-twitter-square{
 
     .grad-header{    
         background-color: rgba(255,255,255,0.15);
-        transition: all .5s;
+        transition: all .3s;
     }
 
-    /* Research Section */
+    /* Research Section PC */
 
     .carusel-selectors{
         display: none;
         
+    }
+
+    .research h2{
+        text-align: left;
+        color: var(--secondary-color);
     }
 
     .research-items{
@@ -610,7 +657,7 @@ i.fa-twitter-square{
 
     .carusel{
         display: block !important;
-        width: 33%;
+        width: 32%;
     }
 
 
@@ -622,24 +669,29 @@ i.fa-twitter-square{
     .news-container{
         display: flex;
         flex-direction: column;
-        background: orange;
+        /* background: orange; */
+        justify-content: space-between;
         flex:2;
+        
+        /* height: 200px; */
+        /* height: auto; */
     }
 
     .news-content{
         display: flex;
         justify-content: space-between;
-        margin-right: 10px;
+        margin-right: 15px;
+        /* background: #000; */
     }
 
     .events{
         /* display: flex; */
-        background: steelblue;
+        /* background: steelblue; */
         flex: 1;
     }
 
     .event-content{
-        background: green;
+        /* background: green; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -657,6 +709,13 @@ i.fa-twitter-square{
 
     .news{
         width: 48%;
+        /* height: 300; */
+        /* max-height: 493px; */
+        /* background: #000; */
+        /* padding-bottom: 30px; */
+        height: 97.2%;
+        /* border: 1px solid; */
+        /* margin-bottom:px; */
     }
 
     .date{
@@ -667,7 +726,7 @@ i.fa-twitter-square{
 
     .bord{
         padding-left: 10px;
-        min-height: 300px;  
+        /* min-height: 300px;   */
         text-align: left;
     }
 
@@ -733,6 +792,7 @@ i.fa-twitter-square{
     .admission-content h3{
         font-size: 24px;
         width: 60%;
+        text-transform: uppercase;
     }
     
     .admission-form{
@@ -816,10 +876,11 @@ i.fa-twitter-square{
     .toggle-search{
         display: flex;
         width: 100vw;
-        height: 75px;
-        background: var(--button-unclicked);
+        height: 0px;
+        background: var(--secondary-color);
         justify-content: flex-end;
-        /* transition: all 5s; */
+        overflow: hidden;
+        transition: all 0.1s;
     }
 
     .search-container{
@@ -840,6 +901,9 @@ i.fa-twitter-square{
 }
 /* Media query Pc end */
 @media screen and (min-width:1024px){
+    
+    
+    
     .container{
         width: 1024px;
         margin: 0 auto;
