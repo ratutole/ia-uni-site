@@ -275,12 +275,18 @@ img{
 }
 
 .bord{
+    position: relative;
+    top: -3.5px;
     border: 1px solid black;
     margin: 0;
     border-top: 0;
     height: auto;
     /* border-top: none; */
 } 
+
+/* .news-bord{
+    border: 1px solid black;
+} */
 
 .news{
     display: flex;
@@ -308,9 +314,14 @@ img{
     /* width: 174px; */
 
     text-align: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-left: 0;
     height: auto;
+}
+
+.event-bord{
+    border: 1px solid black;
+    min-height: 159px;
 }
 
 .event-content p{
@@ -616,6 +627,12 @@ i.fa-twitter-square{
     .event-items{
         margin-bottom: 10px;
     }
+
+    /* .event-bord{
+        border: 1px solid black;
+        min-height: 158px;
+    } */
+
     .news{
         width: 48%;
     }
@@ -679,6 +696,7 @@ i.fa-twitter-square{
 
     .adm-container{
         display: flex;
+        justify-content: space-between;
     }
 
     .adm-header h2{
