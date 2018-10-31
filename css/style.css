@@ -76,7 +76,7 @@ h2{
 h1{
     padding-top: 76px;
     padding-bottom: 0px;
-    line-height: 42px;
+    line-height: 48px;
     text-transform: uppercase;
     /* margin-top: 10px; */
 }
@@ -976,5 +976,9 @@ i.fa-twitter-square{
     .container{
         width: 1024px;
         margin: 0 auto;
+    }
+
+    h1{
+        max-width: 70%;
     }
 }
