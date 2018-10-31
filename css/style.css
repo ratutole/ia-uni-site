@@ -413,6 +413,7 @@ img{
 /* About Us */
 .about-us{
     background: url(../images/ben-duchac-66002-unsplash.jpg);
+    /* Hello */
     text-align: center;
     min-height: 400px;
     color: white;
