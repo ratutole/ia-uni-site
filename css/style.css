@@ -415,8 +415,9 @@ img{
     background: url(../images/ben-duchac-66002-unsplash.jpg);
     /* Hello */
     text-align: center;
+
     min-height: 400px;
-    color: white;
+    color: black;
     display: flex;
     margin-top: 50px;
     margin-bottom: 60px;
