@@ -3,7 +3,7 @@ const MENU = document.querySelector('.nav-toggler');
 const MENUITEMS = document.querySelector('.mobile-nav');
 const COVER = document.querySelector('.cover');
 
-// Variables research slider
+// Variables research slider - Carusels
 const CARUSELS = document.querySelectorAll('.carusel');
 const CARUSELSELECTORS = document.querySelectorAll('.carusel-selectors i');
 
@@ -79,14 +79,8 @@ COVER.addEventListener('click',function(){
 
 // Search bar ******************
 
-// var hideBar = function(){
-//   SBAR.style.display = 'none';
-// };
-
-// hideBar();//hide bar on load
 
 SBTN.addEventListener('click',function(){
-  // SBAR.style.display = 'block';
   SBAR.classList.toggle('active');
 });
 
@@ -94,19 +88,22 @@ SBTN.addEventListener('click',function(){
 // UG PG color change grad-header
 screenBreak();
 
-
+// ************Search Bar end
 
 // Carusel Slider
 const reset = function () {
   for (var i = 0; i < CARUSELS.length; i++) {
-    CARUSELS[i].style.display = 'none';
+    CARUSELS[i].classList.add('invisible');
+    // CARUSELS[i].classList.remove('visible');
+    // CARUSELS[i].style.display = 'none';
   }
 };
 
 
 var startCarousel = function () {
   reset();
-  CARUSELS[0].style.display = 'block';
+  // CARUSELS[0].style.display = 'block';
+  CARUSELS[0].classList.remove('invisible');
 };
 
 startCarousel(); //starting carusel
@@ -123,7 +120,8 @@ var all = function(){
       CARUSELSELECTORS[current].addEventListener('click', function(){
       uncheck();
       reset();
-      CARUSELS[current].style.display = 'block';
+      // CARUSELS[current].style.display = 'block';
+      CARUSELS[current].classList.remove('invisible');
       this.className = this.className.replace('far','fas');
     });
   }

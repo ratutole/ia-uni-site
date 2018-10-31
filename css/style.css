@@ -10,6 +10,7 @@
     
 }
 
+
 html{
     box-sizing: border-box;
 }
@@ -32,11 +33,12 @@ footer{
     background: #333333;
     max-height: 430px;
     color: white;
+    margin-top: 40px;
     /* font-size: 8px; */
 }
 
 hr{
-    width: 50%;
+    /* width: 50%; */
     /* float: left; */
     /* display: inline-block; */
     /* text-align: left; */
@@ -175,6 +177,15 @@ img{
     color: #000;
 }
 
+.arrow-selectors{
+    color: #000;
+}
+
+.fa-chevron-left{
+    /* position: absolute; */
+    top: 50px;
+}
+
 .toggle-search{display: none;}
 
 
@@ -261,6 +272,11 @@ img{
 
 .research{
     text-align: center;
+    /* position: relative; */
+}
+
+.research h2{
+    margin-top: 10px;
 }
 
 
@@ -275,6 +291,7 @@ img{
 
 .carusel{
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .15);
+    /* display: none; */
 }
 
 .carusel-selectors{
@@ -293,8 +310,23 @@ img{
 
 /* The dot selectors */
 
-.inactive{
+/* .visible{
+    display: block;
+} */
+
+.invisible{
     display: none;
+
+    animation: slide-left 1s ease-out;
+}
+
+@keyframes slide-left {
+      0% { opacity: 0; transform: translateY(-100%); }   
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.fa-circle{
+    animation: slide-left 1s ease-out;
 }
 
 .active{
@@ -329,7 +361,7 @@ img{
 .news{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     border: 1px solid var(--border-news-events);
     border-top: 0px;
 }
@@ -387,6 +419,7 @@ img{
     color: white;
     display: flex;
     margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 .about-content{
@@ -410,6 +443,7 @@ img{
 .admissions{
     text-align: center;
     margin-bottom: 30px;
+    /* background: #000; */
 }
 
 
@@ -439,6 +473,8 @@ img{
 
 .submit-form{
     text-align: center;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
 }
 
 input[type="button"]{
@@ -497,6 +533,8 @@ input[type="button"]{
 }
 
 .social{
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 40px;
 }
 
@@ -540,14 +578,14 @@ i.fa-twitter-square{
 
 /* global fix styles */
 
-.space-below{
+/* .space-below{
     margin-bottom: 30px;
 }
 
 
 .section-below{
     margin-bottom: 60px;
-}
+} */
 
 
 /* Pc Design 
@@ -558,6 +596,10 @@ i.fa-twitter-square{
     /* body{
         background:yellow;
     } */
+
+    hr{
+        width: 50%;
+    }
 
     main{
         min-height: 500px;
@@ -826,6 +868,7 @@ i.fa-twitter-square{
    
     .submit-form{
         text-align: right;
+        margin-bottom: 20px;
     }
 
    
