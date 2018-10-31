@@ -1,3 +1,5 @@
+const time = 300;
+
 // Variables navbar
 const MENU = document.querySelector('.nav-toggler');
 const MENUITEMS = document.querySelector('.mobile-nav');
@@ -119,9 +121,10 @@ var all = function(){
       const current = i;
       CARUSELSELECTORS[current].addEventListener('click', function(){
       uncheck();
-      reset();
-      // CARUSELS[current].style.display = 'block';
-      CARUSELS[current].classList.remove('invisible');
+      setTimeout(function(){
+        reset();
+        CARUSELS[current].classList.remove('invisible');
+      },time);
       this.className = this.className.replace('far','fas');
     });
   }
