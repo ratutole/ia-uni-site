@@ -16,34 +16,56 @@ const BTNPG = document.querySelector('.btn-clr2');
 const UGHD = document.querySelector('.undergraduate');
 const PGHD = document.querySelector('.postgraduate');
 
+const UG = document.querySelector('.ug');
+const PG = document.querySelector('.pg');
+
 // Variables search bar
 const SBAR = document.querySelector('.toggle-search');
 const SBTN = document.querySelector('.searchbar');
 
 
 // Functions *****************************
-var changeColor  = function(grad,btn){
-  grad.addEventListener('mouseover',function(){
-    this.style.backgroundColor = '#502174';
-    btn.style.color = '#502174';
+// var changeColor  = function(grad,btn){
+//   grad.addEventListener('mouseover',function(){
+//     this.style.backgroundColor = '#502174';
+//     btn.style.color = '#502174';
     
-  });
-  grad.addEventListener('mouseleave',function(){
-    this.style.backgroundColor ='rgba(255,255,255,0.15)';
-    btn.style.color = 'black';
-  });
-};
+//   });
+//   grad.addEventListener('mouseleave',function(){
+//     this.style.backgroundColor ='rgba(255,255,255,0.15)';
+//     btn.style.color = 'black';
+//   });
+// };
 
 // Change color on grad-buttons
-var changeColorBtn  = function(grad,btn){
-  btn.addEventListener('mouseover',function(){
-    grad.style.backgroundColor = '#502174';
-    this.style.color = '#502174';
+// var changeColorBtn  = function(grad,btn){
+//   btn.addEventListener('mouseover',function(){
+//     grad.style.backgroundColor = '#502174';
+//     this.style.color = '#502174';
     
+//   });
+//   btn.addEventListener('mouseleave',function(){
+//     grad.style.backgroundColor ='rgba(255,255,255,0.15)';
+//     this.style.color = 'black';
+//   });
+// };
+
+var changeColor = function(){
+  PG.addEventListener('mouseover',function(){
+        PGHD.style.backgroundColor = '#502174';
+        BTNPG.style.color = '#502174';
+      });
+  PG.addEventListener('mouseleave',function(){
+    PGHD.style.backgroundColor ='rgba(255,255,255,0.15)';
+    BTNPG.style.color = 'black';
   });
-  btn.addEventListener('mouseleave',function(){
-    grad.style.backgroundColor ='rgba(255,255,255,0.15)';
-    this.style.color = 'black';
+  UG.addEventListener('mouseover',function(){
+        UGHD.style.backgroundColor = '#502174';
+        BTNUG.style.color = '#502174';
+      });
+  UG.addEventListener('mouseleave',function(){
+    UGHD.style.backgroundColor ='rgba(255,255,255,0.15)';
+    BTNUG.style.color = 'black';
   });
 };
 
@@ -124,7 +146,7 @@ var all = function(){
       setTimeout(function(){
         reset();
         CARUSELS[current].classList.remove('invisible');
-      },time);
+      },0);
       this.className = this.className.replace('far','fas');
     });
   }
