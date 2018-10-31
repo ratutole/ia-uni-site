@@ -316,7 +316,7 @@ img{
 .invisible{
     display: none;
 
-    animation: slide-left 1s ease-out;
+    /* animation: slide-left 1s ease-out; */
 }
 
 @keyframes slide-left {
