@@ -113,7 +113,7 @@ main button:hover{
 }
 
 main{
-    background: url(images/sittingonbench.jpg);
+    background: url(../images/sittingonbench.jpg);
     color: white;
     /* height: 530px; */
     min-height: 567px;
@@ -412,7 +412,7 @@ img{
 
 /* About Us */
 .about-us{
-    background: url(images/ben-duchac-66002-unsplash.jpg);
+    background: url(../images/ben-duchac-66002-unsplash.jpg);
     text-align: center;
     min-height: 400px;
     color: white;
