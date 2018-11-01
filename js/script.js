@@ -24,7 +24,17 @@ const SBAR = document.querySelector('.toggle-search');
 const SBTN = document.querySelector('.searchbar');
 
 
+// variables dynamic text
+const PARA = document.querySelector('main p');
+
 // Functions *****************************
+var dynamicText = function(){
+  var text = document.createTextNode(' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit alias  reiciendis aliquam sint. Voluptate, quos earum.');
+
+  PARA.appendChild(text);
+
+};
+
 // var changeColor  = function(grad,btn){
 //   grad.addEventListener('mouseover',function(){
 //     this.style.backgroundColor = '#502174';
@@ -73,17 +83,23 @@ var changeColor = function(){
 var screenBreak = function(){
   w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
   const targetWidth = 767;
+  const targetWidth2 = 1079;
   if ( w >= targetWidth) {     
     //Add your javascript for screens wider than or equal to 768 here
-      changeColor(UGHD,BTNUG);
-      changeColor(PGHD,BTNPG);
+      // changeColor(UGHD,BTNUG);
+      // changeColor(PGHD,BTNPG);
       
-      changeColorBtn(UGHD,BTNUG);
-      changeColorBtn(PGHD,BTNPG);
+      // changeColorBtn(UGHD,BTNUG);
+      // changeColorBtn(PGHD,BTNPG);
       // console.log('greater than 767');
+      changeColor();
     }
     else {
       // console.log('less than 767');
+    }
+
+    if(w >= targetWidth2){
+      dynamicText();
     }
   // 
 };
@@ -143,10 +159,8 @@ var all = function(){
       const current = i;
       CARUSELSELECTORS[current].addEventListener('click', function(){
       uncheck();
-      setTimeout(function(){
-        reset();
-        CARUSELS[current].classList.remove('invisible');
-      },0);
+      reset();
+      CARUSELS[current].classList.remove('invisible');
       this.className = this.className.replace('far','fas');
     });
   }

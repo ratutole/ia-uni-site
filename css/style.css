@@ -114,7 +114,9 @@ main button:hover{
 }
 
 main{
-    background: url(../images/sittingonbench.jpg);
+    background: url(../images/sittingonbenchMob.jpg);
+    background-size: cover;
+    /* background-size: contain; */
     color: white;
     /* height: 530px; */
     min-height: 567px;
@@ -275,7 +277,8 @@ li{
 
 
 .grad-body{
-    height: 173px;
+    min-height: 173px;
+    padding: 0 20px;
 }
 
 .research{
@@ -329,10 +332,24 @@ li{
     /* animation: slide-left 1s ease-out; */
 }
 
-@keyframes slide-left {
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+    
+  @keyframes fade {
+    from {opacity: 0.6; transform:scale(.998);} 
+    to {opacity: 1; transform: scale(1);}
+  }
+  /* @keyframes fade {
+    from {transform: translate(-100%);} 
+    to {transform: translate(0);}
+  } */
+
+/* @keyframes slide-left {
       0% { opacity: 0; transform: translateY(-100%); }   
     100% { opacity: 1; transform: translateY(0); }
-}
+} */
 
 .fa-circle{
     animation: slide-left 1s ease-out;
@@ -615,6 +632,7 @@ i.fa-twitter-square{
     }
 
     main{
+        background: url(../images/sittingonbench.jpg);
         min-height: 500px;
     }
 
@@ -1012,9 +1030,6 @@ i.fa-twitter-square{
         margin-right: 50px;
     }
 
-    .search-container i{
-        /* margin-left: 10px; */
-    }
 
     .toggle-search input{
         min-height: 35px;
@@ -1026,18 +1041,47 @@ i.fa-twitter-square{
     
 }
 /* Media query Pc end */
-@media screen and (min-width:1024px){
+@media screen and (min-width:1280px){
     
-    
+    /* body{
+        background: yellow;
+    } */
     
     .container{
-        width: 1024px;
+        width: 1080px;
         margin: 0 auto;
     }
 
-    h1{
-        max-width: 70%;
+    main{
+        min-height: 575px;
     }
 
+
+
+    h1{
+        max-width: 70%;
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .ug-pg section{
+        max-width: 475px;
+    }
+
+    .grad-body{
+        /* background: #000; */
+        padding-top: 10px;
+        min-height: 206px;
+    }
     
+    .grad-body button{
+        margin-top: 10px;
+    }
 }
+
+/* 1024px media query */
+
