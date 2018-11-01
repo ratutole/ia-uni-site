@@ -96,6 +96,7 @@ button{
     color: black;
     font-size: 14px;
     font-weight: var(--sub-hd-wgt);
+    cursor: pointer;
 }
 
 button:hover{
@@ -172,7 +173,10 @@ img{
     text-decoration: none;
 }
 
-
+li{
+    cursor: pointer;
+}
+/* Pointer cursor for li tag */
 
 .nav-toggler{
     padding: 10px;
@@ -492,6 +496,7 @@ input[type="button"]{
     font-size: 14px;
     font-weight: 500;
     border: none;
+    cursor: pointer;
 }
 
 .submit-form input[type="button"]{
@@ -770,7 +775,7 @@ i.fa-twitter-square{
         justify-content: space-between;
         margin-right: 15px;
         /* background: yellow; */
-        height: 97%;
+        height: 97.4%;
         /* margin: 0; */
         /* background: #000; */
     }
@@ -850,6 +855,8 @@ i.fa-twitter-square{
         padding-right: 20px;
         padding-bottom: 5px;
         font-size: 12px !important;
+        text-transform: capitalize;
+        margin-bottom: 10px;
     }
 
     .pc-events{
@@ -991,11 +998,13 @@ i.fa-twitter-square{
 
     .hover-effect{
         transition: all .2s;
+        padding: 14px;
+        cursor: pointer;
     }
+
 
     .hover-effect:hover{
         background: var(--primary-color);
-        padding: 14px;
     }
 
     .search-container{
@@ -1004,7 +1013,7 @@ i.fa-twitter-square{
     }
 
     .search-container i{
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .toggle-search input{
