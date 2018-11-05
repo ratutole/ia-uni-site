@@ -144,8 +144,10 @@ const reset = function () {
 
 var slideShow = function(){
    setInterval(function(){
+     uncheck();
      reset();
      CARUSELS[current].classList.remove('invisible');
+     CARUSELSELECTORS[current].className = CARUSELSELECTORS[current].className.replace('far','fas');
      if(current >= CARUSELS.length-1){
        current = 0;
      }else{
