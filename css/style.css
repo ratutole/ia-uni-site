@@ -372,6 +372,7 @@ li{
 
 .news-events h3{
     margin: 0;
+    margin-top: 20px;
 }
 
 .pc-news, .pc-events{
@@ -847,7 +848,7 @@ i.fa-twitter-square{
     }
 
     .bord h3{
-        padding-top: 30px;
+        padding-top: 10px;
         /* margin-bottom: 14px; */
     }
 
