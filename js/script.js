@@ -9,6 +9,9 @@ const COVER = document.querySelector('.cover');
 const CARUSELS = document.querySelectorAll('.carusel');
 const CARUSELSELECTORS = document.querySelectorAll('.carusel-selectors i');
 
+var current = 0;
+const slideTime = 5000;
+
 // Variables ug-pg
 const BTNUG = document.querySelector('.btn-clr');
 const BTNPG = document.querySelector('.btn-clr2');
@@ -138,6 +141,22 @@ const reset = function () {
     // CARUSELS[i].style.display = 'none';
   }
 };
+
+var slideShow = function(){
+   setInterval(function(){
+     reset();
+     CARUSELS[current].classList.remove('invisible');
+     if(current >= CARUSELS.length-1){
+       current = 0;
+     }else{
+       current += 1;
+     }
+     console.log(current);
+   }, slideTime);
+
+};
+
+slideShow();
 
 
 var startCarousel = function () {
