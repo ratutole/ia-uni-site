@@ -512,7 +512,19 @@ input[type="text"]{
     padding-left: 15px;
 }
 
-input[type="button"]{
+input[type="email"]{
+    padding-left: 15px;
+}
+
+input[type="tel"]{
+    padding-left: 15px;
+}
+
+
+
+
+
+input[type="submit"]{
     height: 37px;
     width: 110px;
     text-transform: uppercase;
@@ -522,12 +534,12 @@ input[type="button"]{
     cursor: pointer;
 }
 
-.submit-form input[type="button"]{
+.submit-form input[type="submit"]{
     background: var(--secondary-color);
     color: var(--white);
 }
 
-.submit-form input[type="button"]:hover{
+.submit-form input[type="submit"]:hover{
     background: var(--primary-color);
     /* color: var(--white); */
 }
