@@ -5,7 +5,7 @@
     --primary-color: #502174;
     --sub-hd-wgt: 500;
     --grad-color: #777777;
-    --border-news-events: rgba(80,30,116,0.4);
+    --border-news-events: rgba(80,30,116,0.1);
     --white:#ffffff;
     
 }
@@ -506,6 +506,10 @@ li{
     text-align: center;
     margin-top: 20px;
     /* margin-bottom: 20px; */
+}
+
+input[type="text"]{
+    padding-left: 15px;
 }
 
 input[type="button"]{
