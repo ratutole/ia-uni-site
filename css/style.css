@@ -597,7 +597,8 @@ input[type="submit"]{
 }
 
 .social i:hover{
-    font-size: 25px;
+    /* font-size: 25px; */
+    opacity: .8;
 }
 
 i.fa-facebook-square{
