@@ -123,9 +123,11 @@ main{
     /* background-size: contain; */
     color: white;
     /* height: 530px; */
-    min-height: 567px;
+    /* min-height: 567px; */
     text-align: center;
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding-top:0;
+    padding: 100px 20px 150px;
 }
 
 main p{
@@ -187,6 +189,10 @@ li{
 .nav-toggler{
     padding: 10px;
     color: #000;
+}
+
+.nav-toggler{
+    cursor: pointer;
 }
 
 .arrow-selectors{
@@ -655,7 +661,7 @@ i.fa-twitter-square{
 
     main{
         background: url(../images/sittingonbench.jpg);
-        min-height: 500px;
+        /* min-height: 500px; */
     }
 
     .nav-toggler{
@@ -719,6 +725,9 @@ i.fa-twitter-square{
     /* Landing section */
     main{
         text-align: left;
+        min-height: 567px;
+        padding: 0;
+        padding-top: 60px;
     }
 
     /* Ug and pg ********************/
@@ -744,7 +753,7 @@ i.fa-twitter-square{
         margin-bottom: 0;
     }
 
-    .ug-link{
+    /* .ug-link{
         position:absolute; 
         width:100%;
         height:100%;
@@ -760,7 +769,7 @@ i.fa-twitter-square{
         top:0;
         left: 0;
         z-index: 1;
-    }
+    } */
 
     
 
