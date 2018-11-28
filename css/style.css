@@ -225,6 +225,7 @@ li{
     padding-left: 30px;
     font-size: 16px;
     background: var(--secondary-color);
+    /* color: white !important; */
 }
 
 
@@ -712,7 +713,8 @@ i.fa-twitter-square{
     }
 
     .mobile-nav li{
-        align-self:flex-start;  
+        align-self:flex-start; 
+        padding: 0; 
     }
 
     .mobile-nav li:hover{
@@ -720,7 +722,14 @@ i.fa-twitter-square{
     }
 
     .mobile-nav a{
-        color: black;
+        padding: 15px;
+        display:inline-block;
+        color:black;
+        
+    }
+
+    .mobile-nav a:hover{
+        color: white;
     }
 
     /* Landing section */
