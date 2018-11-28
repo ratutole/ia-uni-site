@@ -496,7 +496,7 @@ li{
     border-left: 1px solid var(--border-news-events);
     /* margin-bottom: 20px; */
     /* padding-bottom: 20px; */
-    min-width: 75%;
+    min-width: 70%;
 }
 
 .form-item label{
