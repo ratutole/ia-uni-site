@@ -222,7 +222,7 @@ li{
 }
 
 .mobile-nav li:hover{
-    padding-left: 30px;
+    /* padding-left: 30px; */
     font-size: 16px;
     background: var(--secondary-color);
     /* color: white !important; */
@@ -717,8 +717,12 @@ i.fa-twitter-square{
         padding: 0; 
     }
 
+    #search{
+        padding: 15px;
+    }
+
     .mobile-nav li:hover{
-        padding-left: 15px;
+        /* padding-left: 15px; */
     }
 
     .mobile-nav a{
