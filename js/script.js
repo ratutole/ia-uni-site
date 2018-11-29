@@ -153,7 +153,7 @@ var slideShow = function(){
      }else{
        current += 1;
      }
-     console.log(current);
+    //  console.log(current);
    }, slideTime);
 
 };
